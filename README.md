@@ -1,48 +1,37 @@
-# Proyecto de Preprocesamiento de Datos para Análisis de Precios de Propiedades
+README for Bank Marketing Campaign Data Analysis
 
-Este proyecto tiene como objetivo realizar el preprocesamiento de datos para un conjunto de datos relacionado con propiedades, específicamente el análisis de precios en el mercado inmobiliario.
+Introduction
+This repository contains code and information related to the analysis of a dataset from a bank marketing campaign. The analysis includes data preprocessing, outlier removal, feature scaling, feature selection, and building a logistic regression model. The primary goal is to predict the success of a marketing campaign based on various features.
 
-## Contenido del Proyecto
+Dataset
+The dataset used in this analysis is related to a marketing campaign conducted by a bank. It includes various features such as age, campaign details, economic indicators, and more. The target variable is binary, indicating whether a client subscribed to a term deposit ("yes") or not ("no").
 
-- **1. Introducción**
-  - Breve descripción del proyecto y su objetivo.
+Contents
+Data Cleaning and Outlier Removal
 
-- **2. Estructura del Repositorio**
-  - Descripción de la estructura del repositorio, incluyendo carpetas clave y archivos.
+The dataset is loaded, and outliers are removed based on predefined limits for specific variables.
+Feature Scaling
 
-- **3. Conjunto de Datos**
-  - Origen del conjunto de datos.
-  - Breve descripción de las variables.
-  - Enlaces a la fuente original del conjunto de datos.
+The numerical features are scaled using standardization (Z-score normalization).
+Feature Selection
 
-- **4. Preprocesamiento de Datos**
-  - Descripción detallada de los pasos de preprocesamiento aplicados.
-  - Código relevante en archivos específicos.
+Feature selection is performed using the chi-squared statistical test.
+Logistic Regression Model
 
-- **5. Exploratory Data Analysis (EDA)**
-  - Descripción de la exploración de datos realizada.
-  - Gráficos y visualizaciones clave.
+A logistic regression model is constructed using the preprocessed data.
+Model accuracy is evaluated, and a confusion matrix is visualized to understand model performance.
+Hyperparameter Optimization
 
-- **6. Selección de Características**
-  - Métodos utilizados para la selección de características.
-  - Justificación de las características seleccionadas.
+Grid search and random search techniques are employed to optimize hyperparameters for the logistic regression model.
+Model Improvement
 
-- **7. Conjuntos de Entrenamiento y Prueba**
-  - Cómo se dividieron los datos en conjuntos de entrenamiento y prueba.
-  - Información sobre los archivos CSV resultantes.
-
-- **8. Dependencias**
-  - Lista de las bibliotecas de Python utilizadas.
-
-## Cómo Utilizar Este Repositorio
-
-1. Clona este repositorio: git clone https://github.com/Munchkinland/AirBnB-Data-Preprocessing-Project.git
-2. Sigue las instrucciones detalladas en cada sección del README.
-
-## Contribuciones
-
-Siéntete libre de contribuir a este proyecto a través de pull requests. Todas las contribuciones son bienvenidas.
-
-## Licencia
-
-Este proyecto está bajo la licencia [Nombre de la Licencia]. Consulta el archivo LICENSE para obtener más detalles.
+The model is further improved based on the optimized hyperparameters.
+The percentage improvement in accuracy is calculated.
+Instructions
+Clone the repository to your local machine.
+Ensure you have the required Python libraries installed (pandas, scikit-learn, matplotlib, seaborn).
+Run the Jupyter Notebook files in the provided order.
+Note
+The dataset used in this analysis is assumed to be already cleaned and preprocessed.
+Adjustments may be needed based on the characteristics of your specific dataset.
+Feel free to explore, modify, and contribute to enhance the analysis!
