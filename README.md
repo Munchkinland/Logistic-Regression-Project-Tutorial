@@ -1,5 +1,7 @@
 README for Bank Marketing Campaign Data Analysis
 
+![image](https://github.com/Munchkinland/Logistic-Regression-Project-Tutorial/assets/92251234/773887cc-609c-46c3-86c3-bdd6779de37e)
+
 Introduction
 This repository contains code and information related to the analysis of a dataset from a bank marketing campaign. The analysis includes data preprocessing, outlier removal, feature scaling, feature selection, and building a logistic regression model. The primary goal is to predict the success of a marketing campaign based on various features.
 
